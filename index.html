@@ -1,0 +1,83 @@
+<!DOCTYPE html><html>
+<head> 
+    <title> SHOP GIÀY VIP PRO </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/c1.css">
+</head>
+<body>
+<div class="container">
+<header> </header>
+<nav>
+    <a href="#top">Trang chủ</a>
+    <a href="#thuong_hieu">Thương Hiệu</a>
+    <a href="#san_pham_hot">Sản Phẩm HOT</a>
+    <a href="#mlb">MLB</a>
+    <a href="#vans">VANS</a>
+    <a href="#blance">BLANCE</a>
+    <a href="#converse">CONVERSE</a>
+    <a href="#jordan">JORDAN</a>
+    <a href="#adidas">ADIDAS</a>
+    <a href="#puma">PUMA</a>
+    <a href="#luxury">LUXURY</a>
+    <a href="#balo">BALO</a>
+    <a href="#bang_gia">Bảng giá</a>
+</nav>
+<main>
+    <a href="#top" id="gotop">&#8679;</a>   
+    <section id="thuong_hieu"> <h2>Các Thương Hiệu </h2> <div id="data"></div>
+    </section>
+    <section id="san_pham_hot"> 
+    <h2>Sản Phẩm HOT<a href="#top">&#8657;</a></h2> <div id="data"></div></section>
+    
+    <section id="mlb">          
+    <h2>MLB<a href="#top">&#8657;</a></h2> <div id="data"></div></section>
+
+    <section id="vans">         
+    <h2>VANS<a href="#top">&#8657;</a></h2> <div id="data"></div></section>
+
+    <section id="blance">       
+    <h2>BLANCE<a href="#top">&#8657;</a></h2> <div id="data"></div></section>
+
+    <section id="converse">     
+    <h2>CONVERSE<a href="#top">&#8657;</a></h2> <div id="data"></div></section>
+
+    <section id="jordan">       
+    <h2>JORDAN<a href="#top">&#8657;</a></h2> <div id="data"></div></section>
+
+    <section id="adidas">       
+    <h2>ADIDAS<a href="#top">&#8657;</a></h2> <div id="data"></div></section>
+
+    <section id="puma">         
+    <h2>PUMA<a href="#top">&#8657;</a></h2> <div id="data"></div></section>
+
+    <section id="luxury">
+    <h2>LUXURY <a href="#top">&#8657;</a></h2> <div id="data"></div></section>
+
+    <section id="balo">         
+    <h2>Balo <a href="#top">&#8657;</a></h2> <div id="data"></div></section>
+
+    <section id="bang_gia"> <h2>Bảng giá tham khảo<a href="#top">&#8657;</a></h2>  <div id="data"></div></section>
+
+</main>
+<footer> PS32206 - Tống Đức Khoa </footer>
+</div>
+</body> </html>
+
+<script type="module">
+import {showlistthuonghieu , showlistsanphamhot, showlistmlb, showlistvans, showlistblance, showlistconverse, 
+    showlistjordan, showlistadidas, showlistpuma, showlistluxury, showlistbalo } from  './js/app.js'
+import {showbanggia } from  './js/app.js'
+document.querySelector("#thuong_hieu #data").innerHTML = await showlistthuonghieu();
+document.querySelector("#san_pham_hot #data").innerHTML = await showlistsanphamhot(); 
+document.querySelector("#mlb #data").innerHTML = await showlistmlb();
+document.querySelector("#vans #data").innerHTML = await showlistvans();
+document.querySelector("#blance #data").innerHTML = await showlistblance();
+document.querySelector("#converse #data").innerHTML = await showlistconverse();
+document.querySelector("#jordan #data").innerHTML = await showlistjordan();
+document.querySelector("#adidas #data").innerHTML = await showlistadidas();
+document.querySelector("#puma #data").innerHTML = await showlistpuma();
+document.querySelector("#luxury #data").innerHTML = await showlistluxury();
+document.querySelector("#balo #data").innerHTML = await showlistbalo();
+document.querySelector("#bang_gia #data").innerHTML = await showbanggia();
+
+</script>
